@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Dashboard</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/forms.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header style="background:white; padding:18px 40px; box-shadow:var(--shadow-soft);">
+  <div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3> United medical Hospital <span style="font-size:14px; color:var(--gray); font-weight:400;">Patient Management System</span></h3>
+    <div style="font-size:22px;">🔔</div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main style="padding:40px; max-width:1200px; margin:auto;">
+
+  <!-- TOKEN HEADER -->
+  <div class="highlight-card" style="margin-bottom:25px;">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <div>
+        <p>Your Token Number</p>
+        <h2>T-046</h2>
+        <p>Mohammed Rahman</p>
+      </div>
+      <span class="badge badge-success">Active</span>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:15px; margin-top:20px;">
+      <div class="card" style="background:rgba(255,255,255,0.15); color:white;">
+        Current Token<br><strong>T-041</strong>
+      </div>
+      <div class="card" style="background:rgba(255,255,255,0.15); color:white;">
+        Patients Ahead<br><strong>5</strong>
+      </div>
+      <div class="card" style="background:rgba(255,255,255,0.15); color:white;">
+        Est. Wait Time<br><strong>~50 min</strong>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid; grid-template-columns:2fr 1fr; gap:25px;">
+
+    <!-- LEFT -->
+    <div>
+
+      <!-- LIVE QUEUE -->
+      <div class="card section">
+        <h3 class="section-title">Live Queue Progress</h3>
+
+        <div class="queue-item" style="border-left:5px solid var(--success);">
+          <div class="queue-info">
+            <strong>T-041 – In Progress</strong>
+            <span>Started 10:05 AM</span>
+          </div>
+          <span>7 min</span>
+        </div>
+
+        <div class="progress-wrapper">
+          <div class="progress">
+            <div class="progress-bar" style="width:70%;"></div>
+          </div>
+        </div>
+
+        <ul class="queue-list" style="margin-top:15px;">
+          <li class="queue-item"><strong>1</strong> T-042 – Est. 10:15 AM</li>
+          <li class="queue-item"><strong>2</strong> T-043 – Est. 10:25 AM</li>
+          <li class="queue-item"><strong>3</strong> T-044 – Est. 10:35 AM</li>
+          <li class="queue-item"><strong>4</strong> T-045 – Est. 10:45 AM</li>
+          <li class="queue-item" style="border-left:5px solid var(--primary); background:#eef4ff;">
+            <strong>5</strong> T-046 (You)
+          </li>
+        </ul>
+      </div>
+
+      <!-- TODAY PROGRESS -->
+      <div class="card section">
+        <h3 class="section-title">Today's Progress</h3>
+        <p>✔ Registration Completed – 8:45 AM</p>
+        <p>✔ Token Generated – 8:47 AM</p>
+        <p>⏳ Waiting in Queue – Est. 10:45 AM</p>
+        <p style="color:var(--gray);">⏺ Consultation – Pending</p>
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div>
+
+      <!-- DOCTOR INFO -->
+      <div class="side-panel">
+        <h4>Doctor Details</h4>
+        <p><strong>Dr. Sarah Ahmed</strong></p>
+        <p>Cardiology</p>
+        <p>📍 Room 203, 2nd Floor</p>
+        <p>🕒 9:00 AM – 2:00 PM</p>
+      </div>
+
+      <!-- QUICK ACTIONS -->
+      <div class="side-panel" style="margin-top:15px;">
+        <h4>Quick Actions</h4>
+        <button class="btn btn-primary" style="width:100%; margin-bottom:10px;">
+          Request Emergency Priority
+        </button>
+        <button class="btn" style="width:100%; margin-bottom:10px;">
+          View QR Code
+        </button>
+        <button class="btn btn-danger" style="width:100%;">
+          Cancel Token
+        </button>
+      </div>
+
+      <!-- WARNING -->
+      <div class="form-info" style="margin-top:15px;">
+        ⚠ If you arrive more than 30 minutes late, your token may be cancelled or moved to penalty queue.
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Token Generated</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/forms.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header style="background:white; padding:18px 40px; box-shadow:var(--shadow-soft);">
+  <div style="display:flex; align-items:center; justify-content:space-between;">
+    <h3> United medical Hospital <span style="font-size:14px; color:var(--gray); font-weight:400;">Patient Management System</span></h3>
+    <div style="font-size:22px;">☰</div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main style="padding:40px; max-width:1200px; margin:auto;">
+
+  <!-- SUCCESS MESSAGE -->
+  <div class="card" style="background:#ecfdf3; border-left:6px solid var(--success); margin-bottom:25px;">
+    <strong style="color:var(--success);">✔ Token Generated Successfully!</strong>
+    <p style="font-size:14px; margin-top:6px;">
+      Your appointment has been confirmed
+    </p>
+  </div>
+
+  <div style="display:grid; grid-template-columns:2fr 1fr; gap:25px;">
+
+    <!-- LEFT CONTENT -->
+    <div>
+
+      <!-- TOKEN CARD -->
+      <div class="highlight-card">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <p>Your Token Number</p>
+            <h2>T-046</h2>
+          </div>
+          <div style="text-align:right;">
+            <p>Date</p>
+            <strong>Nov 27, 2025</strong>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; margin-top:20px;">
+          <div class="card" style="background:rgba(255,255,255,0.15); color:white;">
+            Estimated Time<br><strong>10:45 AM</strong>
+          </div>
+          <div class="card" style="background:rgba(255,255,255,0.15); color:white;">
+            Queue Position<br><strong>5 patients ahead</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- DETAILS -->
+      <div class="card section">
+        <h3 class="section-title">Doctor Details</h3>
+        <p><strong>Dr. Sarah Ahmed</strong> – Cardiology Specialist</p>
+        <p>🕒 9:00 AM – 2:00 PM</p>
+        <p>📍 Room 203, 2nd Floor</p>
+      </div>
+
+      <div class="card section">
+        <h3 class="section-title">Patient Information</h3>
+        <p><strong>Name:</strong> Mohammed Rahman</p>
+        <p><strong>Age:</strong> 45 years</p>
+        <p><strong>Mobile:</strong> +880 1712-345678</p>
+      </div>
+
+      <div class="card section">
+        <h3 class="section-title">Queue Status</h3>
+        <div class="stats-grid">
+          <div class="stat-card">
+            Ahead<br><strong>5</strong>
+          </div>
+          <div class="stat-card">
+            Total Today<br><strong>45</strong>
+          </div>
+          <div class="stat-card">
+            Wait (min)<br><strong>~50</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACTIONS -->
+      <div class="action-row">
+        <button class="btn btn-primary">⬇ Download</button>
+        <button class="btn">🔗 Share</button>
+      </div>
+
+      <!-- RULES -->
+      <div class="card section">
+        <h3 class="section-title">Token Rules & Guidelines</h3>
+        <ul style="font-size:14px; line-height:1.8;">
+          <li>• Average consultation time: 10 minutes</li>
+          <li>• Prayer break: 1:00 PM – 1:30 PM</li>
+          <li>• Maximum 50 patients per day</li>
+          <li>• 15–30 mins late → penalty queue</li>
+          <li>• 30+ mins late → auto cancellation</li>
+          <li>• Emergency cases get priority</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div>
+
+      <div class="side-panel">
+        <h4>QR Code</h4>
+        <div class="qr-box" style="margin-bottom:15px;">
+          QR CODE PLACEHOLDER
+        </div>
+        <button class="btn btn-primary" style="width:100%;">
+          Track Live Queue
+        </button>
+
+        <div class="form-info" style="margin-top:15px;">
+          ⚠ Arrive 15 mins before your time<br>
+          ⚠ Bring valid ID & reports
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+</body>
+</html>

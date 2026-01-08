@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback & Check-in</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/forms.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header style="background:white; padding:18px 40px; box-shadow:var(--shadow-soft);">
+  <div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3> United medical Hospital <span style="font-size:14px; color:var(--gray); font-weight:400;">Patient Management System</span></h3>
+    <div style="font-size:22px;">☰</div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main style="padding:40px; max-width:1200px; margin:auto;">
+
+  <!-- PAGE TITLE -->
+  <div class="section">
+    <h1 style="font-size:26px;">Feedback & Check-in</h1>
+    <p style="color:var(--gray);">Share your experience and scan QR for quick check-in</p>
+  </div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:25px;">
+
+    <!-- LEFT: QR CHECK-IN -->
+    <div class="card">
+      <h3 class="section-title">QR Code Check-in</h3>
+
+      <div class="qr-box" style="margin-bottom:15px;">
+        Position QR code here
+      </div>
+
+      <button class="btn btn-primary" style="width:100%; margin-bottom:15px;">
+        📷 Scan QR Code
+      </button>
+
+      <div class="form-group">
+        <label>Enter Token Number</label>
+        <input type="text" placeholder="e.g. T-046">
+      </div>
+
+      <button class="btn" style="width:100%;">
+        Manual Check-in
+      </button>
+
+      <div class="form-info" style="margin-top:15px;">
+        ℹ Check-in at least 15 minutes before appointment to avoid penalty.
+      </div>
+    </div>
+
+    <!-- RIGHT: FEEDBACK -->
+    <div class="card">
+      <h3 class="section-title">Patient Feedback</h3>
+
+      <div class="form-group">
+        <label>Token Number</label>
+        <input type="text" placeholder="T-046">
+      </div>
+
+      <div class="form-group">
+        <label>Doctor Consulted</label>
+        <select>
+          <option>Select Doctor</option>
+          <option>Dr. Sarah Ahmed</option>
+          <option>Dr. Kamal Hassan</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Overall Experience</label>
+        <div class="stars">
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Additional Comments</label>
+        <textarea rows="4" placeholder="Share your experience, suggestions, or concerns..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Would you recommend us?</label>
+        <div class="action-row">
+          <button class="btn btn-success">Yes</button>
+          <button class="btn btn-danger">No</button>
+        </div>
+      </div>
+
+      <button class="btn btn-primary form-submit">
+        Submit Feedback
+      </button>
+    </div>
+
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <div class="section">
+    <h3 class="section-title">Recent Patient Testimonials</h3>
+
+    <div class="stats-grid">
+      <div class="card">
+        ⭐⭐⭐⭐⭐
+        <p>"Excellent service! Very professional and caring staff."</p>
+        <small>— Ahmed Hassan</small>
+      </div>
+
+      <div class="card">
+        ⭐⭐⭐⭐☆
+        <p>"Good experience overall. Waiting time was reasonable."</p>
+        <small>— Fatima Begum</small>
+      </div>
+
+      <div class="card">
+        ⭐⭐⭐⭐⭐
+        <p>"Best pediatric care I’ve experienced."</p>
+        <small>— Rahim Mia</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUEUE FORECAST -->
+  <div class="highlight-card" style="margin-top:30px; background:var(--gradient-purple);">
+    <h3>Queue Forecasting</h3>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:15px; margin-top:15px;">
+      <div class="card" style="background:rgba(255,255,255,0.15); color:white;">
+        Peak Time<br><strong>11:30 AM – 12:00 PM</strong>
+      </div>
+      <div class="card" style="background:rgba(255,255,255,0.15); color:white;">
+        Current Wait<br><strong>~45 minutes</strong>
+      </div>
+      <div class="card" style="background:rgba(255,255,255,0.15); color:white;">
+        Traffic Level<br><strong>Moderate</strong>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+</body>
+</html>

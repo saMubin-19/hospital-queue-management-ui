@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Patient Registration</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/forms.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header style="background:white; padding:18px 40px; box-shadow:var(--shadow-soft);">
+  <div style="display:flex; align-items:center; justify-content:space-between;">
+    <h3 style="display:flex; align-items:center; gap:10px;">
+      United medical Hospital
+      <span style="font-size:14px; font-weight:400; color:var(--gray);">
+        Patient Management System
+      </span>
+    </h3>
+    <div style="font-size:22px;">☰</div>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main style="padding:40px 20px;">
+
+  <div class="form-card">
+    <h2>Patient Registration</h2>
+    <p>Please fill in your basic information to continue</p>
+
+    <!-- FULL NAME -->
+    <div class="form-group">
+      <label>Full Name *</label>
+      <input type="text" placeholder="Enter your full name" />
+    </div>
+
+    <!-- AGE -->
+    <div class="form-group">
+      <label>Age *</label>
+      <input type="number" placeholder="Enter your age" />
+    </div>
+
+    <!-- MOBILE -->
+    <div class="form-group">
+      <label>Mobile Number *</label>
+      <input type="text" placeholder="+880 1XXX-XXXXXX" />
+    </div>
+
+    <!-- EMAIL -->
+    <div class="form-group">
+      <label>Email Address</label>
+      <input type="email" placeholder="your.email@example.com" />
+    </div>
+
+    <!-- ADDRESS -->
+    <div class="form-group">
+      <label>Address *</label>
+      <textarea rows="3" placeholder="Enter your complete address"></textarea>
+    </div>
+
+    <!-- NID -->
+    <div class="form-group">
+      <label>National ID (NID) *</label>
+      <input type="text" placeholder="Enter your NID number" />
+    </div>
+
+    <!-- BUTTON -->
+    <button class="btn btn-primary form-submit">
+      Continue to Specialist Selection
+    </button>
+
+    <!-- INFO BOX -->
+    <div class="form-info">
+      ℹ️ All fields marked with <strong>*</strong> are required.  
+      Your information is secure and will only be used for medical purposes.
+    </div>
+  </div>
+
+</main>
+
+</body>
+</html>

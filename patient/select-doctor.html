@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Specialist</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/forms.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header style="background:white; padding:18px 40px; box-shadow:var(--shadow-soft);">
+  <div style="display:flex; align-items:center; justify-content:space-between;">
+    <h3> United medical Hospital <span style="font-size:14px; color:var(--gray); font-weight:400;">Patient Management System</span></h3>
+    <div style="font-size:22px;">☰</div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main style="padding:40px;">
+
+  <!-- PAGE TITLE -->
+  <div class="section">
+    <h1 style="font-size:26px; margin-bottom:6px;">Select Specialist</h1>
+    <p style="color:var(--gray);">Choose your doctor and preferred appointment date</p>
+  </div>
+
+  <!-- FILTERS -->
+  <div class="card section">
+    <div class="inline-group">
+      <div class="form-group">
+        <label>Specialty</label>
+        <select>
+          <option>All Specialties</option>
+          <option>Cardiology</option>
+          <option>Neurology</option>
+          <option>Pediatrics</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Date of Visit</label>
+        <input type="date" value="2025-11-27">
+      </div>
+
+      <div class="form-group">
+        <label>Availability</label>
+        <select>
+          <option>All Doctors</option>
+          <option>Available</option>
+          <option>Unavailable</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- DOCTOR CARDS -->
+  <div class="stats-grid">
+
+    <!-- CARD 1 -->
+    <div class="card">
+      <div style="display:flex; justify-content:space-between;">
+        <div style="display:flex; gap:15px;">
+          <div style="width:48px; height:48px; background:#2563eb; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:600;">
+            SA
+          </div>
+          <div>
+            <strong>Dr. Sarah Ahmed</strong><br>
+            <span style="color:var(--primary); font-size:14px;">Cardiology</span><br>
+            <span style="font-size:13px; color:var(--gray);">15 years experience</span>
+          </div>
+        </div>
+        <span class="badge badge-success">Available</span>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:15px; font-size:14px;">
+        <div>🕒 9:00 AM – 2:00 PM</div>
+        <div>📍 Room 203</div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; margin-top:15px; background:#f1f6ff; padding:12px; border-radius:10px;">
+        <div>Next Token<br><strong>T-045</strong></div>
+        <div>Approx. Wait<br><strong>45 mins</strong></div>
+      </div>
+
+      <button class="btn btn-primary" style="width:100%; margin-top:15px;">
+        Book Appointment
+      </button>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+      <div style="display:flex; justify-content:space-between;">
+        <div style="display:flex; gap:15px;">
+          <div style="width:48px; height:48px; background:#2563eb; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:600;">
+            KH
+          </div>
+          <div>
+            <strong>Dr. Kamal Hassan</strong><br>
+            <span style="color:var(--primary); font-size:14px;">Neurology</span><br>
+            <span style="font-size:13px; color:var(--gray);">12 years experience</span>
+          </div>
+        </div>
+        <span class="badge badge-success">Available</span>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:15px; font-size:14px;">
+        <div>🕒 10:00 AM – 4:00 PM</div>
+        <div>📍 Room 305</div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; margin-top:15px; background:#f1f6ff; padding:12px; border-radius:10px;">
+        <div>Next Token<br><strong>T-032</strong></div>
+        <div>Approx. Wait<br><strong>30 mins</strong></div>
+      </div>
+
+      <button class="btn btn-primary" style="width:100%; margin-top:15px;">
+        Book Appointment
+      </button>
+    </div>
+
+    <!-- CARD 3 (UNAVAILABLE) -->
+    <div class="card" style="opacity:0.6;">
+      <div style="display:flex; justify-content:space-between;">
+        <div style="display:flex; gap:15px;">
+          <div style="width:48px; height:48px; background:#94a3b8; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:600;">
+            RU
+          </div>
+          <div>
+            <strong>Dr. Rahim Uddin</strong><br>
+            <span style="color:var(--gray); font-size:14px;">Orthopedics</span><br>
+            <span style="font-size:13px; color:var(--gray);">18 years experience</span>
+          </div>
+        </div>
+        <span class="badge">Unavailable</span>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:15px; font-size:14px;">
+        <div>🕒 2:00 PM – 7:00 PM</div>
+        <div>📍 Room 405</div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; margin-top:15px; background:#f1f5f9; padding:12px; border-radius:10px;">
+        <div>Next Token<br><strong>T-020</strong></div>
+        <div>Approx. Wait<br><strong>20 mins</strong></div>
+      </div>
+
+      <button class="btn" style="width:100%; margin-top:15px;" disabled>
+        Not Available Today
+      </button>
+    </div>
+
+  </div>
+
+</main>
+
+</body>
+</html>

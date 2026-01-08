@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/forms.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header style="background:white; padding:18px 40px; box-shadow:var(--shadow-soft);">
+  <div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3>⚙️ United medical Hospital <span style="font-size:14px; color:var(--gray); font-weight:400;">Admin Panel</span></h3>
+    <div>Admin</div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main style="padding:40px; max-width:1300px; margin:auto;">
+
+  <!-- DASHBOARD HEADER -->
+  <div class="dashboard-header">
+    <h1>System Overview</h1>
+    <span class="badge badge-success">System Online</span>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3>Total Doctors</h3>
+      <h2>18</h2>
+    </div>
+    <div class="stat-card">
+      <h3>Departments</h3>
+      <h2>7</h2>
+    </div>
+    <div class="stat-card">
+      <h3>Patients Today</h3>
+      <h2>126</h2>
+    </div>
+    <div class="stat-card">
+      <h3>Avg. Waiting Time</h3>
+      <h2>42 min</h2>
+    </div>
+  </div>
+
+  <div style="display:grid; grid-template-columns:2fr 1fr; gap:25px;">
+
+    <!-- LEFT -->
+    <div>
+
+      <!-- DOCTOR MANAGEMENT -->
+      <div class="card section">
+        <h3 class="section-title">Doctor Management</h3>
+
+        <ul class="queue-list">
+          <li class="queue-item">
+            <div class="queue-info">
+              <strong>Dr. Sarah Ahmed</strong>
+              <span>Cardiology • Room 203</span>
+            </div>
+            <span class="badge badge-success">Active</span>
+          </li>
+
+          <li class="queue-item">
+            <div class="queue-info">
+              <strong>Dr. Kamal Hassan</strong>
+              <span>Neurology • Room 305</span>
+            </div>
+            <span class="badge badge-success">Active</span>
+          </li>
+
+          <li class="queue-item">
+            <div class="queue-info">
+              <strong>Dr. Rahim Uddin</strong>
+              <span>Orthopedics • Room 405</span>
+            </div>
+            <span class="badge badge-warning">On Leave</span>
+          </li>
+        </ul>
+
+        <button class="btn btn-primary" style="margin-top:15px;">
+          + Add New Doctor
+        </button>
+      </div>
+
+      <!-- TOKEN RULES -->
+      <div class="card section">
+        <h3 class="section-title">Token Generation Rules</h3>
+
+        <div class="form-group">
+          <label>Maximum Tokens per Doctor</label>
+          <input type="number" value="50">
+        </div>
+
+        <div class="form-group">
+          <label>Average Consultation Time (minutes)</label>
+          <input type="number" value="10">
+        </div>
+
+        <div class="form-group">
+          <label>Auto-cancel After (minutes late)</label>
+          <input type="number" value="30">
+        </div>
+
+        <div class="form-group">
+          <label>Emergency Priority Level</label>
+          <select>
+            <option>Highest</option>
+            <option>Medium</option>
+            <option>Low</option>
+          </select>
+        </div>
+
+        <button class="btn btn-primary">
+          Save Rules
+        </button>
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div>
+
+      <!-- SYSTEM STATUS -->
+      <div class="side-panel">
+        <h4>System Status</h4>
+        <p>🟢 Token Service: Online</p>
+        <p>🟢 Queue Engine: Running</p>
+        <p>🟢 Notification: Active</p>
+      </div>
+
+      <!-- ALERTS -->
+      <div class="side-panel" style="margin-top:15px;">
+        <h4>Recent Alerts</h4>
+        <p>⚠ High waiting time in Cardiology</p>
+        <p>⚠ 3 auto-cancelled tokens today</p>
+        <p>⚠ Emergency queue used twice</p>
+      </div>
+
+      <!-- ADMIN NOTES -->
+      <div class="form-info" style="margin-top:15px;">
+        ⚠ Changing token rules affects all active queues.<br>
+        ⚠ Emergency priority overrides normal order.
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+</body>
+</html>

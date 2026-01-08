@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Dashboard</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/forms.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header style="background:white; padding:18px 40px; box-shadow:var(--shadow-soft);">
+  <div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3>🩺 United medical Hospital <span style="font-size:14px; color:var(--gray); font-weight:400;">Doctor Panel</span></h3>
+    <div>Dr. Sarah Ahmed</div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main style="padding:40px; max-width:1300px; margin:auto;">
+
+  <!-- DASHBOARD HEADER -->
+  <div class="dashboard-header">
+    <h1>Live Patient Queue</h1>
+    <span class="badge badge-success">Clinic Open</span>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3>Patients Today</h3>
+      <h2>45</h2>
+      <span class="stat-positive">+5 since yesterday</span>
+    </div>
+    <div class="stat-card">
+      <h3>Currently Waiting</h3>
+      <h2>12</h2>
+    </div>
+    <div class="stat-card">
+      <h3>Emergency Requests</h3>
+      <h2 style="color:var(--danger);">2</h2>
+    </div>
+    <div class="stat-card">
+      <h3>Avg. Consultation</h3>
+      <h2>10 min</h2>
+    </div>
+  </div>
+
+  <div style="display:grid; grid-template-columns:2fr 1fr; gap:25px;">
+
+    <!-- LEFT: QUEUE -->
+    <div>
+
+      <!-- CURRENT PATIENT -->
+      <div class="card section" style="border-left:6px solid var(--success);">
+        <h3 class="section-title">Current Patient</h3>
+        <p><strong>T-041</strong> — Mohammed Rahman</p>
+        <p>Age: 45 | Cardiology</p>
+        <p>Started at: 10:05 AM</p>
+
+        <div class="action-row">
+          <button class="btn btn-success">Mark Done</button>
+          <button class="btn btn-warning">Skip</button>
+        </div>
+      </div>
+
+      <!-- QUEUE LIST -->
+      <div class="card section">
+        <h3 class="section-title">Upcoming Queue</h3>
+
+        <ul class="queue-list">
+          <li class="queue-item emergency">
+            <div class="queue-info">
+              <strong>T-042 – Emergency</strong>
+              <span>Chest pain reported</span>
+            </div>
+            <button class="btn btn-danger">Prioritize</button>
+          </li>
+
+          <li class="queue-item">
+            <div class="queue-info">
+              <strong>T-043</strong>
+              <span>Estimated 10:25 AM</span>
+            </div>
+            <button class="btn btn-primary">Call</button>
+          </li>
+
+          <li class="queue-item">
+            <div class="queue-info">
+              <strong>T-044</strong>
+              <span>Estimated 10:35 AM</span>
+            </div>
+            <button class="btn btn-primary">Call</button>
+          </li>
+
+          <li class="queue-item">
+            <div class="queue-info">
+              <strong>T-045</strong>
+              <span>Estimated 10:45 AM</span>
+            </div>
+            <button class="btn btn-primary">Call</button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: INFO -->
+    <div>
+
+      <!-- DOCTOR INFO -->
+      <div class="side-panel">
+        <h4>Doctor Information</h4>
+        <p><strong>Dr. Sarah Ahmed</strong></p>
+        <p>Cardiology Specialist</p>
+        <p>📍 Room 203</p>
+        <p>🕒 9:00 AM – 2:00 PM</p>
+      </div>
+
+      <!-- QUEUE CONTROLS -->
+      <div class="side-panel" style="margin-top:15px;">
+        <h4>Queue Controls</h4>
+        <button class="btn btn-primary" style="width:100%; margin-bottom:10px;">
+          Pause Queue
+        </button>
+        <button class="btn btn-warning" style="width:100%; margin-bottom:10px;">
+          Announce Delay
+        </button>
+        <button class="btn btn-danger" style="width:100%;">
+          Close Queue
+        </button>
+      </div>
+
+      <!-- NOTES -->
+      <div class="form-info" style="margin-top:15px;">
+        ⚠ Emergency patients can be prioritized manually.<br>
+        ⚠ Skipped patients move to penalty queue.
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+</body>
+</html>
