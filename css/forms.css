@@ -1,0 +1,99 @@
+/* Form Wrapper */
+.form-card {
+  max-width: 520px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.form-card h2 {
+  margin-bottom: 10px;
+}
+
+.form-card p {
+  color: var(--gray);
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--light-gray);
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(30,94,255,0.1);
+}
+
+/* Inline Inputs */
+.inline-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* Form Button */
+.form-submit {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Info Box */
+.form-info {
+  margin-top: 20px;
+  background: #eef4ff;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  color: var(--primary-dark);
+}
+
+/* Feedback Stars */
+.stars {
+  display: flex;
+  gap: 8px;
+}
+
+.star {
+  font-size: 22px;
+  cursor: pointer;
+  color: #d1d5db;
+}
+
+.star.active {
+  color: #facc15;
+}
+
+/* QR Box */
+.qr-box {
+  border: 2px dashed var(--light-gray);
+  border-radius: var(--radius-md);
+  padding: 30px;
+  text-align: center;
+  color: var(--gray);
+}
